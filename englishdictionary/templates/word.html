@@ -18,7 +18,7 @@ body{
 
 .searchTerm {
   width: 100%;
-  border: 3px solid #00B4CC;
+  border: 3px solid #cc0000;
   border-right: none;
   padding: 5px;
   height: 20px;
@@ -28,14 +28,14 @@ body{
 }
 
 .searchTerm:focus{
-  color: #00B4CC;
+  color: #cc0000;
 }
 
 .searchButton {
   width: 40px;
   height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
+  border: 1px solid #cc0000;
+  background: #cc0000;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
@@ -60,20 +60,11 @@ body{
       <input type="text" name="search" class="searchTerm" placeholder="Input Your Word Here">
       <button type="submit" class="searchButton">
         <i class="fa fa-search"></i>
-     </button>
-    </form>
+      </button>
+     </form>
    </div>
    
    <h3>Meaning: {{meaning}}</h3>
-   
-   <h3>Synonyms: {% for synonym in synonyms %}
-       {{synonym}},
-       {% endfor %}</h3>
-   
-   
-   <h3>Antonyms: {% for antonym in antonyms %}
-       {{antonym}},
-       {% endfor %}</h3>
    
 </div>
 </body>
